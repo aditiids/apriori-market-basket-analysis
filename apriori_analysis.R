@@ -1,0 +1,21 @@
+library(arules)
+library(arulesViz)
+data<-read.transactions("/Users/aditisuryawanshi/Downloads/Market_Basket_Optimisation.csv")
+summary(data)
+inspect(data[1:10])
+itemsets_one<-apriori(data, parameter = list(support = 0.02, minlen = 1, maxlen = 1, target = "frequent itemsets"))
+inspect(itemsets_one)
+sorted_itemsets_one <-sort(itemsets_one, by = "support")
+inspect(sorted_itemsets_one)
+inspect(head(sorted_itemsets_one,10))
+rules<-apriori(data,parameter = list(support = 0.01,confidence =0.02, target = "rules"))
+summary(rules)
+inspect(head(rules,10))
+inspect(head(sort(rules,10)))
+plot(rules)
+plot(head(rules,10),method = "graph")
+confidentRules<-rules[quality(rules)$confidence > 0.9]
+confidentRules
+highLiftRules<-head(sort(rules, by = "lift"))
+highLiftRules
+inspect(confidentRules)
