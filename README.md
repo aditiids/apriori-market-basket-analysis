@@ -23,6 +23,8 @@ install.packages("arulesViz")
 
 ## Dataset
 - The dataset used in this project is a transactional dataset in CSV format. Ensure that the dataset (Market_Basket_Optimisation.csv) is placed in the correct directory for loading.
+- The dataset used in this project is sourced from Kaggle: [Market Basket Optimization Dataset](https://www.kaggle.com/datasets/devchauhan1/market-basket-optimisationcsv?resource=download).
+- This dataset is used under the terms and conditions specified by Kaggle and the dataset's original creators. Make sure to comply with the dataset’s license when using it.
   
 ## Usage
 - Load the dataset using the read.transactions function from the arules package.
