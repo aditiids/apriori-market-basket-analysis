@@ -20,7 +20,8 @@ To install the required packages, run the following commands in your R console:
 install.packages("arules")
 install.packages("arulesViz")
 ```
-##Dataset
+
+## Dataset
 - The dataset used in this project is a transactional dataset in CSV format. Ensure that the dataset (Market_Basket_Optimisation.csv) is placed in the correct directory for loading.
   
 ## Usage
