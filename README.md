@@ -19,10 +19,18 @@ To install the required packages, run the following commands in your R console:
 ```R
 install.packages("arules")
 install.packages("arulesViz")
+```
+##Dataset
+- The dataset used in this project is a transactional dataset in CSV format. Ensure that the dataset (Market_Basket_Optimisation.csv) is placed in the correct directory for loading.
+  
+## Usage
+- Load the dataset using the read.transactions function from the arules package.
+- Preprocess the data (e.g., removing duplicates or irrelevant items).
+- Use the apriori function to find frequent itemsets.
+- Generate association rules using the ruleInduction function.
+- Visualize the results using the arulesViz package.
 
-## Dataset
-The dataset used in this project is a transactional dataset in CSV format. Make sure the dataset (`Market_Basket_Optimisation.csv`) is placed in the correct directory for loading.
+## License
+-This project is licensed under the MIT License.
 
-### Example Dataset Location
-
-
+- Feel free to modify or add anything specific to your project. This is a basic structure to get started.
